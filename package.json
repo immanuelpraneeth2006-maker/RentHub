@@ -4,13 +4,22 @@
   "description": "RentHub - Equipment Rental Management Platform (MERN + MongoDB Atlas)",
   "scripts": {
     "start": "node server/server.js",
-    "build": "npm install --prefix server",
+    "build": "npm install",
     "server": "npm run dev --prefix server",
     "client": "npm run dev --prefix client",
     "seed": "npm run seed --prefix server",
-    "build:client": "npm run build --prefix client",
-    "install:all": "npm install --prefix server && npm install --prefix client",
-    "postinstall": "npm install --prefix server"
+    "build:client": "npm run build --prefix client"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.9",
+    "express": "^5.3.0",
+    "express-rate-limit": "^8.7.2",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.11.4",
+    "morgan": "^1.12.1",
+    "multer": "^2.5.0"
   },
   "keywords": [
     "mern",
