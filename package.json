@@ -3,11 +3,14 @@
   "version": "1.0.0",
   "description": "RentHub - Equipment Rental Management Platform (MERN + MongoDB Atlas)",
   "scripts": {
+    "start": "node server/server.js",
+    "build": "npm install --prefix server",
     "server": "npm run dev --prefix server",
     "client": "npm run dev --prefix client",
     "seed": "npm run seed --prefix server",
     "build:client": "npm run build --prefix client",
-    "install:all": "npm install --prefix server && npm install --prefix client"
+    "install:all": "npm install --prefix server && npm install --prefix client",
+    "postinstall": "npm install --prefix server"
   },
   "keywords": [
     "mern",
@@ -20,4 +23,3 @@
   "author": "RentHub",
   "license": "MIT"
 }
-
